@@ -1,93 +1,97 @@
 /* Estilos básicos */
+/* Normalización de márgenes y modelo de caja */
 * { 
     margin: 0; 
     padding: 0; 
-    box-sizing: border-box; 
+    box-sizing: border-box; /* Incluye padding y border en el ancho/alto */
+    
 }
-
+/* Estilos generales del documento */
 body { 
-    font-family: 'Arial', sans-serif; 
-    line-height: 1.6; 
-    color: #333; 
+    font-family: 'Arial', sans-serif;  /* Fuente principal */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #333; /* Color de texto principal */
 }
+/* Scroll suave para navegación interna */
 
 html { 
     scroll-behavior: smooth; 
 }
-
+/* Estilos base para enlaces */
 a { 
     text-decoration: none; 
     color: #3498db; 
 }
-
+/* Estilos comunes para secciones */
 section { 
     padding: 3rem 1.5rem; 
     max-width: 1000px; 
     margin: 0 auto; 
 }
-
-/* Header */
+/* ===== HEADER Y NAVEGACIÓN ===== */
 header {
     background: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: fixed;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);/* Sombra sutil */
+    position: fixed;/* Fijo en la parte superior */
+        width: 100%;
     width: 100%;
     padding: 1rem;
-    z-index: 100;
-}
+    z-index: 100;/* Asegura que esté por encima de otros elementos */
 
+}
+/* Contenedor de navegación */
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
+    justify-content: space-between;/* Distribuye espacio entre elementos */
+    align-items: center;/* Centrado vertical */
+    max-width: 1000px;/* Ancho máximo */
+    margin: 0 auto;/* Centrado horizontal */
 }
-
+/* Lista de navegación */
 nav ul { 
-    display: flex; 
-    list-style: none; 
+    display: flex; /* Diseño en línea */
+    list-style: none;  /* Elimina viñetas */
 }
-
+/* Elementos del menú */
 nav li { 
-    margin-left: 1.5rem; 
+    margin-left: 1.5rem; /* Espaciado entre elementos */
 }
-
+/* Enlaces de navegación */
 nav a { 
-    color: #2c3e50; 
-    font-weight: 500; 
+    color: #2c3e50;  /* Color oscuro para mejor contraste */
+    font-weight: 500; /* Grosor de fuente seminegrita */
 }
 
 nav a:hover { 
     color: #3498db; 
 }
 
-/* Hero */
+/* ===== SECCIÓN INICIO ===== */
 #inicio {
-    min-height: 100vh;
+    min-height: 100vh;/* Altura completa de la pantalla */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding-top: 4rem;
-    background: #f8f9fa;
+    flex-direction: column;/* Apilado vertical */
+    justify-content: center;/* Centrado vertical */
+    text-align: center;/* Alineación de texto */
+    padding-top: 4rem;/* Compensa el header fijo */
+    background: #f8f9fa;/* Fondo gris claro */
 }
-
+/* Título principal */
 #inicio h2 { 
     font-size: 2.2rem; 
     margin-bottom: 1rem; 
-    color: #2c3e50; 
+    color: #2c3e50; /* Color oscuro corporativo */
 }
-
+/* Texto descriptivo */
 #inicio p { 
     font-size: 1.1rem; 
-    max-width: 600px; 
-    margin: 0 auto 2rem; 
+    max-width: 600px; /* Ancho óptimo para lectura */
+    margin: 0 auto 2rem; /* Centrado con margen inferior */
 }
-
+/* Botón principal */
 .btn {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 1.5rem;/* Color corporativo */
     background: #3498db;
     color: white;
     border-radius: 5px;
@@ -96,24 +100,24 @@ nav a:hover {
 
 /* Sobre mí */
 #sobre-mi { 
-    display: flex; 
+    display: flex;  /* Ocupa  del espacio disponible */
     flex-wrap: wrap; 
     align-items: center; 
     gap: 2rem; 
 }
-
+/* Foto de perfil */
 .profile-img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto;
+    border-radius: 50%;/* Forma circular */
+    object-fit: cover;/* Ajuste de imagen */
+    margin: 0 auto;/* Centrado horizontal */
     border: 3px solid #3498db;
 }
 
 .social-links { 
     display: flex; 
-    gap: 1rem; 
+    gap: 1rem; /* Espacio entre íconos */
     margin-top: 1.5rem; 
 }
 
@@ -124,7 +128,7 @@ nav a:hover {
 
 /* Proyectos */
 #proyectos { 
-    background: #f1f1f1; 
+    background: #f1f1f1; /* Color corporativo al interactuar */
 }
 
 .project-item { 
