@@ -1,45 +1,68 @@
 <!DOCTYPE html>
-<html lang="es">
+<!-- 
+  PORTAFOLIO WEB - Nicolás Huenchual
+  Versión: 1.0
+  Autor: Nicolás Huenchual Moreno
+  Descripción: Portafolio profesional de diseñador UI/UX y desarrollador Frontend
+-->
+
+<html lang="en">
 <head>
-    <!-- Configuración básica del documento -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- METADATOS BÁSICOS -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración viewport responsive -->
+    
+    <!-- INFORMACIÓN DEL SITIO -->
     <title>Portfolio • Nicolas Huenchual – Diseñador de Interfaz de Usuario (UI)</title>
     <meta name="description" content="Portafolio web de Nicolas Huenchual, Diseñador de Interfaz de Usuario (UI) especializado en HTML5, CSS y JavaScript">
-    <!-- Enlaces a recursos externos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assents/css/styles.css">
-    <link rel="canonical" href="https://www.nicolashuenchal.dev/">
+    
+    <!-- RECURSOS EXTERNOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="assents/css/styles.css"> <!-- Hoja de estilos principal -->
+    <link rel="canonical" href="https://www.nicolashuenchal.dev/"> <!-- URL canónica para SEO -->
 </head>
+
 <body>
+    <!-- ENCABEZADO PRINCIPAL -->
     <header>
+        <!-- BARRA DE NAVEGACIÓN -->
         <nav>
+            <!-- LOGO/NOMBRE -->
             <h1>Nicolás Huenchual</h1>
+            
+            <!-- MENÚ PRINCIPAL -->
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#formacion">Formación</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li> <!-- Enlace a sección Inicio -->
+                <li><a href="#sobre-mi">Sobre Mí</a></li> <!-- Enlace a sección Sobre Mí -->
+                <li><a href="#formacion">Formación</a></li> <!-- Enlace a sección Formación -->
+                <li><a href="#proyectos">Proyectos</a></li> <!-- Enlace a sección Proyectos -->
+                <li><a href="#contacto">Contacto</a></li> <!-- Enlace a sección Contacto -->
             </ul>
         </nav>
     </header>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
+        <!-- SECCIÓN DE INICIO -->
         <section id="inicio" class="box">
             <h2>Diseñador de Interfaz de Usuario (UI) • Frontend</h2>
             <p>Soy Nicolás Huenchual Moreno, Técnico Profesional en Informática, apasionado por el diseño de interfaces atractivas, accesibles y funcionales.</p>
+            <!-- BOTÓN CALL TO ACTION -->
             <a href="#proyectos" class="btn">Ver mis proyectos</a>
         </section>
 
+        <!-- SECCIÓN SOBRE MÍ -->
         <section id="sobre-mi" class="box">
             <h2>Sobre Mí</h2>
+            <!-- IMAGEN DE PERFIL -->
             <img src="assents/img/img.perfil.nicolasheunchual.pnj.jpg" alt="Foto de perfil de Nicolás Huenchual" class="profile-img">
             <p>Me esfuerzo por crecer constantemente como diseñador de interfaces y desarrollador web. Disfruto colaborar con personas y trabajar en equipo para lograr soluciones creativas y funcionales.</p>
         </section>
 
+        <!-- SECCIÓN DE FORMACIÓN -->
         <section id="formacion" class="box">
             <h2>Formación</h2>
+            <!-- LISTA DE ESTUDIOS -->
             <ul>
                 <li>Universidad Católica de Temuco - Técnico de Informática</li>
                 <li>Cursos especializados en desarrollo Front-End (HTML, CSS, JavaScript)</li>
@@ -47,43 +70,58 @@
             </ul>
         </section>
 
+        <!-- SECCIÓN DE PROYECTOS -->
         <section id="proyectos" class="box">
             <h2>Mis Proyectos Destacados</h2>
 
+            <!-- PROYECTO 1 -->
             <article class="project-item box">
                 <h3>Periódico Digital</h3>
+                <!-- IMAGEN DEL PROYECTO -->
                 <img src="assents/img/Imagen.de.perioidocos.pnj.png" alt="Captura del periódico digital" class="project-img">
                 <p>Diseño y desarrollo de un periódico digital responsive, optimizado para SEO, con funcionalidades modernas como búsqueda y filtrado de artículos.</p>
+                <!-- ENLACE AL PROYECTO -->
                 <a href="#">Ver más detalles <i class="fas fa-arrow-right"></i></a>
             </article>
 
+            <!-- PROYECTO 2 -->
             <article class="project-item box">
                 <h3>Sitio Web</h3>
+                <!-- IMAGEN DEL PROYECTO -->
                 <img src="assents/img/imag.Sitio web ,pnj.png" alt="Formulario de Sitio Web" class="project-img">
                 <p>Aplicación web para gestionar reservas en línea, con diseño intuitivo en tiempo real.</p>
+                <!-- ENLACE AL PROYECTO -->
                 <a href="#">Ver más detalles <i class="fas fa-arrow-right"></i></a>
             </article>
         </section>
 
+        <!-- SECCIÓN DE CONTACTO -->
         <section class="contact-form box" id="contacto">
             <h2>Contáctame</h2>
+            <!-- FORMULARIO DE CONTACTO -->
             <form action="#" method="post">
+                <!-- CAMPO NOMBRE -->
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" required>
-
+                
+                <!-- CAMPO EMAIL -->
                 <label for="email">Correo Electrónico</label>
                 <input type="email" id="email" name="email" required>
-
+                
+                <!-- CAMPO MENSAJE -->
                 <label for="mensaje">Mensaje</label>
                 <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
+                
+                <!-- BOTÓN DE ENVÍO -->
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
 
-    <script src="assents/Js/script.js"></script>
+    <!-- SCRIPTS JS -->
+    <script src="assents/Js/script.js"></script> <!-- Archivo JavaScript principal -->
 
+    <!-- PIE DE PÁGINA -->
     <footer>
         <p>&copy; 2025 Nicolás Huenchual Moreno. Todos los derechos reservados.</p>
     </footer>
