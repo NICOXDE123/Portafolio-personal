@@ -1,3 +1,6 @@
 # /robots.txt
 User-agent: *
 Allow: /
+*qué páginas de un sitio web pueden rastrear y, en última instancia, indexa*
+
+Sitemap: https://www.nicolashuenchual.dev/sitemap.xml
