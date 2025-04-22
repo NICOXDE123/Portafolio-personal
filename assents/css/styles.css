@@ -147,7 +147,7 @@
   
   .project-img {
     width: 50%; /* Responsive */
-    height: auto;
+    height: 50%;
     border-radius: 8px;
     margin: 1rem 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
